@@ -1,0 +1,17 @@
+{
+  "name": "fastify-api",
+  "version": "1.0.0",
+  "description": "api with fastify",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "fastify start server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.14.0",
+    "fastify-cli": "^2.9.1",
+    "fastify-plugin": "^3.0.0"
+  }
+}
