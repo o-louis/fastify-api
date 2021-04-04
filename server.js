@@ -1,11 +1,9 @@
-const fastify = require("fastify")();
-const PORT = process.env.SERVER_PORT || 3000;
+import createApp from "./app.js";
 
-fastify.get("/", function (request, reply) {
-  reply.send({ title: "Harry Potter API" });
-});
+const start = async () => {
+  const app = createApp({ logger: true });
 
-fastify.listen(PORT, function (err, address) {
-  if (err) throw err;
-  console.log(`server listening on ${fastify.server.address().port}`);
-});
+  await app.listen(process.env.PORT || 3000);
+};
+
+start();

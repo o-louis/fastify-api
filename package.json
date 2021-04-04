@@ -2,16 +2,20 @@
   "name": "fastify-api",
   "version": "1.0.0",
   "description": "api with fastify",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "dev": "node server.js",
     "start": "fastify start server.js"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fastify": "^3.14.0",
+    "fastify-autoload": "^3.6.0",
     "fastify-cli": "^2.9.1",
-    "fastify-plugin": "^3.0.0"
+    "fastify-plugin": "^3.0.0",
+    "fastify-postgres": "^3.5.0",
+    "pg": "^8.5.1"
   }
 }
